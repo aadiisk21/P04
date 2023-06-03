@@ -1,0 +1,67 @@
+/* Reset box model */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(30, 38%, 92%);
+}
+
+/* Remove list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove default typography styles */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* Remove hyperlink styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove default form styles */
+input,
+textarea,
+select,
+button {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+/* Additional reset styles can be added as needed */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 570px;
+    height: 428px;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 10 rgba(0, 0, 0, 0.2);
+}
