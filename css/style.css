@@ -65,3 +65,18 @@ button {
     border-radius: 10px;
     box-shadow: 0 4px 8px 10 rgba(0, 0, 0, 0.2);
 }
+
+@media screen and (max-width:375px) {
+    .container {
+        width: 100%;
+        height: auto;
+    }
+
+    .card {
+        /* width: 336px;
+        height: 586px; */
+        width: 90%;
+        height: 90%;
+    }
+    /* 335.5×585.7 */
+}
