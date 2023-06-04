@@ -68,36 +68,38 @@ body {
     width: 570px;
     height: 428px;
     background-color: white;
-    /* border: 1px solid black; */
+    border: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px 10 rgba(0, 0, 0, 0.2);
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
+    /* background: rgb(0, 0, 0); */
 }
 
-.div-1,
+/* .div-1,
 .div-2 {
     flex: 1;
-}
+} */
 
 .div-1 {
-    background-color: black;
-    opacity: 1;
-}
-
-.div-1 img {
-    width: 286px;
-    height: 432px;
-    opacity: .9;
-    /* object-fit: contain; */
+    width: 64rem;
+    height: 428px;
+    display: block;
+    background-image: url(../images/image-product-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* opacity: .9; */
 }
 
 .div-2 {
+    width: 100%;
+    height: 428px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 1rem;
-    padding: 1rem;
+    padding: 1.8rem;
+    background-clip: padding-box;
 }
 
 .div-2 h6 {
@@ -190,6 +192,7 @@ body {
 
 .attribution {
     font-size: 11px;
+    display: none;
 }
 
 @media screen and (max-width:450px) {
@@ -200,18 +203,48 @@ body {
 
     .card {
         width: 336px;
-        height: 586px;
+        height: 600px;
         display: flex;
         flex-flow: column;
     }
 
     .div-1 {
-        background: none;
+        background-image: url(../images/image-product-mobile.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         width: 336px;
-        height: 300px;
+        height: 290px;
         overflow: hidden;
+    }
+
+    .div-2 {
+        width: 95%;
+        height: 355px;
+        padding: 1rem;
+    }
+
+    .div-2 h6 {
+        margin-top: .5rem;
+        margin-bottom: .7rem;
+    }
+
+    .div-2 h1 {
+        margin-bottom: .7rem;
+    }
+
+    .para p {
+        padding-right: 8px;
+        margin-bottom: .7rem;
+    }
+
+    .offer_price span {
+        margin-top: .7rem;
+    }
+
+    .add-to-cart-btn button {
+        width: 100%;
+        height: 46px;
+        margin-top: .7rem;
     }
 }
